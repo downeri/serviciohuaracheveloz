@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #include "lista.h"
+#include "nodo.h"
 
 
 lista *nuevaLista(void) {

@@ -33,31 +33,20 @@
 		</Compiler>
 		<Unit filename="funciones_almacenista.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="funciones_almacenista.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="funciones_almacenista.h" />
 		<Unit filename="funciones_comprador.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="funciones_comprador.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="funciones_comprador.h" />
 		<Unit filename="funciones_gerente.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="funciones_gerente.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="funciones_gerente.h" />
 		<Unit filename="funciones_repartidor.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="funciones_repartidor.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="funciones_repartidor.h" />
 		<Unit filename="lista.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />

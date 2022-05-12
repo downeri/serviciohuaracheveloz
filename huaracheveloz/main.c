@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include "menus.h"
+#include "lista.h"
+#include "nodo.h"
 #include "funciones_almacenista.h"
 #include "funciones_comprador.h"
 #include "funciones_gerente.h"
 #include "funciones_repartidor.h"
 
+
 int main (){
+    lista *almacen;
     int seleccion=menu_de_menus();
     switch(seleccion){
         case 0:

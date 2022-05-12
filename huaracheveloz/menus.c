@@ -30,9 +30,9 @@ int menu_almacenista(){
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);
-        if (seleccion<0||seleccion>2)
+        if (seleccion<0||seleccion>2||n!=1)
             printf("Seleccione una opción válida\n");
-    }while(seleccion<0||seleccion>2);
+    }while(seleccion<0||seleccion>2||n!=1);
     system("cls");
     return seleccion;
 }
@@ -47,9 +47,9 @@ int menu_comprador(){
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);
-        if (seleccion<0||seleccion>3)
+        if (seleccion<0||seleccion>3||n!=1)
             printf("Seleccione una opción válida\n");
-    }while(seleccion<0||seleccion>3);
+    }while(seleccion<0||seleccion>3||n!=1);
     system("cls");
     return seleccion;
 }
@@ -65,9 +65,9 @@ int menu_gerente(){
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);
-        if (seleccion<0||seleccion>4)
+        if (seleccion<0||seleccion>4||n!=1)
             printf("Seleccione una opción válida\n");
-    }while(seleccion<0||seleccion>4);
+    }while(seleccion<0||seleccion>4||n!=1);
     system("cls");
     return seleccion;
 }
@@ -81,9 +81,9 @@ int menu_repartidor(){
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);
-        if (seleccion<0||seleccion>2)
+        if (seleccion<0||seleccion>2||n!=1)
             printf("Seleccione una opción válida\n");
-    }while(seleccion<0||seleccion>2);
+    }while(seleccion<0||seleccion>2||n!=1);
     system("cls");
     return seleccion;
 }

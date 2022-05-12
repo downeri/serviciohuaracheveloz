@@ -1,20 +1,22 @@
 # depslib dependency file v1.0
-1652323600 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1652325538 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	"menus.h"
+	"lista.h"
+	"nodo.h"
 	"funciones_almacenista.h"
 	"funciones_comprador.h"
 	"funciones_gerente.h"
 	"funciones_repartidor.h"
 
-1652321616 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.h
+1652325296 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.h
 
-1652321723 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
+1652325452 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
 	"menus.h"
 	<stdio.h>
 	<stdlib.h>
 
-1652323262 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
+1652325152 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
 
 1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
 
@@ -24,5 +26,22 @@
 
 1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.c
 	"funciones_repartidor.h"
+	<stdio.h>
+
+1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista.h
+	"nodo.h"
+
+1652324930 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.h
+
+1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
+	"funciones_gerente.h"
+	<stdio.h>
+
+1652325533 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+	"funciones_almacenista.h"
+	<stdio.h>
+
+1652323798 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
+	"funciones_comprador.h"
 	<stdio.h>
 

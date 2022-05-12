@@ -6,4 +6,5 @@ int menu_almacenista();
 int menu_comprador();
 int menu_gerente();
 int menu_repartidor();
+
 #endif

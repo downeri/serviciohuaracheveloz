@@ -7,5 +7,5 @@ struct nodo {
 };
 
 typedef struct nodo nodo;
-
+nodo *crear(int x);
 #endif // NODO_H_INCLUDED

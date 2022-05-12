@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1652323600 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+	<stdio.h>
+	"menus.h"
+	"funciones_almacenista.h"
+	"funciones_comprador.h"
+	"funciones_gerente.h"
+	"funciones_repartidor.h"
+
+1652321616 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.h
+
+1652321723 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
+	"menus.h"
+	<stdio.h>
+	<stdlib.h>
+
+1652323262 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
+
+1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
+
+1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.h
+
+1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.h
+
+1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.c
+	"funciones_repartidor.h"
+	<stdio.h>
+

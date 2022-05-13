@@ -1,9 +1,9 @@
 #include <stdlib.h>
-#include "nodo.h"
+#include "nodo_almacen.h"
 #include <string.h>
-nodo *crear(char *nombreProducto,float precioUnitario,int existencias) {
-    nodo *p;
-    p = malloc(sizeof(nodo));
+nodoAlmacen *crear(char *nombreProducto,float precioUnitario,int existencias) {
+    nodoAlmacen *p;
+    p = malloc(sizeof(nodoAlmacen));
     p->ant=NULL;
     p->sig=NULL;
     strcpy(p->nombreProducto,nombreProducto);

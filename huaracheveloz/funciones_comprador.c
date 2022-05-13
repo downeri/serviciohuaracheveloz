@@ -1,7 +1,7 @@
 #include "funciones_comprador.h"
 #include <stdio.h>
 
-void seleccionarProductos(){
+void seleccionarProductosCompra(){
     printf("Seleccionar Productos");
 }
 void revisarCarrito(){

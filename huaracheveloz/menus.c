@@ -24,7 +24,7 @@ int menu_almacenista(){
     int seleccion;
     int n;
     printf("Bienvenido Almacenista\nPor favor, seleccione una acción:\n");
-    printf("1. Navejar la lista\n");
+    printf("1. Navegar la lista\n");
     printf("2. Registrar nuevo inventario\n");
     printf("0. Menu anterior\n");
     do{

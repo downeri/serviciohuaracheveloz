@@ -29,9 +29,6 @@ void principal(listaAlmacen *almacen){
             case 1:
                 seleccion=menu_almacenista();
                 switch(seleccion){
-                    case 0:
-
-                    break;
                     case 1:
                         mostrarProductos(almacen);
                     break;
@@ -43,9 +40,6 @@ void principal(listaAlmacen *almacen){
             case 2:
                 seleccion=menu_comprador();
                 switch(seleccion){
-                    case 0:
-
-                    break;
                     case 1:
                         seleccionarProductosCompra();
                     break;
@@ -60,9 +54,6 @@ void principal(listaAlmacen *almacen){
             case 3:
                 seleccion=menu_gerente();
                 switch(seleccion){
-                    case 0:
-
-                    break;
                     case 1:
                         colaPedidos();
                     break;
@@ -80,9 +71,6 @@ void principal(listaAlmacen *almacen){
             case 4:
                 seleccion=menu_repartidor();
                 switch(seleccion){
-                    case 0:
-
-                    break;
                     case 1:
                         pedidoAsignado();
                     break;

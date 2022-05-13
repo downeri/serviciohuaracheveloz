@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652325538 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1652402672 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	"menus.h"
 	"lista.h"
@@ -28,10 +28,10 @@
 	"funciones_repartidor.h"
 	<stdio.h>
 
-1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista.h
+1652404613 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista.h
 	"nodo.h"
 
-1652324930 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.h
+1652403713 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.h
 
 1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
 	"funciones_gerente.h"
@@ -44,4 +44,14 @@
 1652323798 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
 	"funciones_comprador.h"
 	<stdio.h>
+
+1652322764 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.c
+	<stdlib.h>
+	"nodo.h"
+
+1652404650 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista.c
+	<stdlib.h>
+	<stdio.h>
+	"lista.h"
+	"nodo.h"
 

@@ -9,7 +9,7 @@
 
 
 int main (){
-    lista *almacen;
+    lista *almacen=nuevaLista();
     int seleccion=menu_de_menus();
     switch(seleccion){
         case 0:

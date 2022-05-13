@@ -10,12 +10,12 @@ struct lista {
 
 typedef struct lista lista;
 
-lista *nuevalista(void);
-void imprimelista(lista *lista);
+lista *nuevaLista(void);
+void imprimeLista(lista *lista);
 void imprimeListaReversa(lista *lista);
 int vacia(lista *lista);
-
-void agregaDatoFinal(lista *lista, int dato);
+nodo *siguienteElemento(lista *lista);
+void agregaDatoFinal(lista *lista, char *producto, float precio, int existencias);
 nodo *borrar2(lista *lista, int dato);
 
 #endif // LISTA_H_INCLUDED

@@ -13,7 +13,7 @@ lista *nuevaLista(void) {
     return p;
 }
 
-void imprimelista(lista *lista) {
+void imprimeLista(lista *lista) {
     nodo *p;
     if (vacia(lista)) {
         printf("Lista vacia\n");
@@ -21,14 +21,29 @@ void imprimelista(lista *lista) {
     }
     p = lista->inicio;
     while (p!=NULL) {
-        printf("[%d] ",p->info);
-        p = p->sig;
+        printf("[%s]\n",p->nombreProducto);
+        printf("[%f]\n",p->precioUnitario);
+        printf("[%d]\n",p->existencias);
+        p=p->sig;
     }
     printf("\n");
     return;
 }
 
-void imprimeListaReversa2(lista *lista) {
+nodo *siguienteElemento(lista *lista) {
+    nodo *p;
+    if (vacia(lista)) {
+        printf("Lista vacia\n");
+        return;
+    }
+    p = lista->inicio;
+    while (p!=NULL) {
+        p=p->sig;
+    }
+    return p;
+}
+
+void imprimeListaReversa(lista *lista) {
     nodo *p;
     if (vacia(lista)) {
         printf("Lista vacia\n");
@@ -36,7 +51,9 @@ void imprimeListaReversa2(lista *lista) {
     }
     p = lista->fin;
     while (p!=NULL) {
-        printf("[%d] ",p->info);
+        printf("[%s]\n",p->nombreProducto);
+        printf("[%f]\n",p->precioUnitario);
+        printf("[%d]\n",p->existencias);
         p = p->ant;
     }
     printf("\n");
@@ -44,24 +61,23 @@ void imprimeListaReversa2(lista *lista) {
 }
 
 int vacia(lista *lista) {
-    return lista->inicio == NULL;
+    return lista->inicio==NULL;
 }
 
-void agregaDatoFinal(lista *lista, int dato) {
-    nodo *p = crear(dato);
-    nodo *rueditas;
+void agregaDatoFinal(lista *lista, char *producto, float precio, int existencias) {
+    nodo *p = crear(producto,precio,existencias);
     if (vacia(lista)) {
-        lista->inicio = lista->fin = p;
+        lista->inicio=lista->fin = p;
         return;
     }
-    p->ant = lista->fin;
-    lista->fin->sig = p;
-    lista->fin = p;
-    lista->n += 1;
+    p->ant=lista->fin;
+    lista->fin->sig=p;
+    lista->fin=p;
+    lista->n++;
     return;
 }
 
-nodo *borrar(lista *lista, int dato) {
+/*nodo *borrar(lista *lista, int dato) {
     nodo *p,*a, *z;
     if (vacia(lista))
         return NULL;
@@ -86,7 +102,6 @@ nodo *borrar(lista *lista, int dato) {
         lista->inicio->ant = NULL;
         p->sig = NULL;
         return p;
-
     }
     if (p==lista->fin) {
         lista->fin = lista->fin->ant;
@@ -94,12 +109,12 @@ nodo *borrar(lista *lista, int dato) {
         p->ant = NULL;
         return p;
     }
-a = p->ant;
-z = p->sig;
-a->sig = z;
-z->ant = a;
-p->ant = NULL;
-p->sig = NULL;
+    a = p->ant;
+    z = p->sig;
+    a->sig = z;
+    z->ant = a;
+    p->ant = NULL;
+    p->sig = NULL;
+    return p;
+}*/
 
-return p;
-}

@@ -19,6 +19,7 @@ nodoAlmacen *borrar2(listaAlmacen *lista, int dato);
 void inicializarListaAlmacen(listaAlmacen *lista);
 void separarNombre(char *nombre);
 void unirNombre(char *nombre);
+void navegarLista(listaAlmacen *lista);
 nodoAlmacen *seleccionarProductos(listaAlmacen *lista);
 
 #endif // LISTA_H_INCLUDED

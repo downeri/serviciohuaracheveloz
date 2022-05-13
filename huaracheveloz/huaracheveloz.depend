@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652432916 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1652433067 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -39,7 +39,7 @@
 	"funciones_gerente.h"
 	<stdio.h>
 
-1652432981 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1652433856 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>
@@ -70,13 +70,13 @@
 
 1652408062 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
 
-1652430040 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
+1652433856 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
 	"lista_almacen.h"
 	"nodo_almacen.h"
 
-1652427505 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
+1652433856 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
 	"nodo_almacen.h"
 

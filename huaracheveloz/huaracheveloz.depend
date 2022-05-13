@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652430425 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1652432916 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -39,7 +39,7 @@
 	"funciones_gerente.h"
 	<stdio.h>
 
-1652430166 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1652432916 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>

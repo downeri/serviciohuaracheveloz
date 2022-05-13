@@ -19,20 +19,18 @@ int main (){
 }
 
 void principal(listaAlmacen *almacen){
-    int rep=1;
-    do{
-        rep=1;
+    while(1){
         system("cls");
         int seleccion=menu_de_menus();
         switch(seleccion){
             case 0:
-                return 1;
+                return;
             break;
             case 1:
                 seleccion=menu_almacenista();
                 switch(seleccion){
                     case 0:
-                        principal(almacen);
+
                     break;
                     case 1:
                         mostrarProductos(almacen);
@@ -46,10 +44,10 @@ void principal(listaAlmacen *almacen){
                 seleccion=menu_comprador();
                 switch(seleccion){
                     case 0:
-                        principal(almacen);
+
                     break;
                     case 1:
-                        //seleccionarProductos();
+                        seleccionarProductosCompra();
                     break;
                     case 2:
                         revisarCarrito();
@@ -63,7 +61,7 @@ void principal(listaAlmacen *almacen){
                 seleccion=menu_gerente();
                 switch(seleccion){
                     case 0:
-                        principal(almacen);
+
                     break;
                     case 1:
                         colaPedidos();
@@ -83,7 +81,7 @@ void principal(listaAlmacen *almacen){
                 seleccion=menu_repartidor();
                 switch(seleccion){
                     case 0:
-                        principal(almacen);
+
                     break;
                     case 1:
                         pedidoAsignado();
@@ -94,5 +92,5 @@ void principal(listaAlmacen *almacen){
                 }
             break;
         }
-    }while(rep==1);
+    }
 }

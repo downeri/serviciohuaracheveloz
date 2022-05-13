@@ -66,6 +66,7 @@ void registrarProductos(listaAlmacen *lista){
     strlwr(opcion);
     switch(opcion[0]){
         case 'n':
+            system("cls");
             printf("Nombre producto:\n");
             fflush(stdin);
             fgets(nuevoNombre,30,stdin);
@@ -141,7 +142,7 @@ void reescribirTxt(listaAlmacen *lista, char nombre[30],int nuevaCantidad){
 void agregarAlTxt(char nombre[30],float precio, int existencias){
     FILE *archivo;
     unirNombre(nombre);
-    archivo=fopen("./productosT.txt","a");
+    archivo=fopen("./productos.txt","a");
     fprintf(archivo,"\n%s %.2f %d",nombre,precio,existencias);
     fclose(archivo);
 }

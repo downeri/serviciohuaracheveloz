@@ -27,15 +27,18 @@ void principal(listaAlmacen *almacen){
                 return;
             break;
             case 1:
-                seleccion=menu_almacenista();
-                switch(seleccion){
-                    case 1:
-                        mostrarProductos(almacen);
-                    break;
-                    case 2:
-                        registrarProductos(almacen);
-                    break;
-                }
+                do{
+                    system("cls");
+                    seleccion=menu_almacenista();
+                    switch(seleccion){
+                        case 1:
+                            mostrarProductos(almacen);
+                        break;
+                        case 2:
+                            registrarProductos(almacen);
+                        break;
+                    }
+                }while(seleccion!=0);
             break;
             case 2:
                 seleccion=menu_comprador();

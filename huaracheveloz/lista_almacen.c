@@ -114,51 +114,7 @@ nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
         printf("[I] Primer producto\n");
         printf("[F] Ultimo producto\n\n");
         printf("[O] Seleccionar producto\n");
-        printf("[H] Salir\n");
-        fflush(stdin);
-        fgets(opcion,2,stdin);
-        strlwr(opcion);
-        switch(opcion[0]){
-            case 's':
-                if(lista->fin==productoActual->sig){
-                    productoActual=lista->inicio;
-                }else{
-                    productoActual=siguienteElementoAlmacen(productoActual);
-                }
-            break;
-            case 'p':
-                if(lista->inicio==productoActual)
-                    productoActual=lista->fin;
-                productoActual=anteriorElementoAlmacen(productoActual);
-            break;
-            case 'i':
-                productoActual=lista->inicio;
-            break;
-            case 'f':
-                productoActual=lista->fin;
-            break;
-            case 'o':
-                return productoActual;
-            break;
-            default:
-                system("cls");
-                printf("Ingrese una opcion correcta\n");
-            break;
-        }
-        imprimirProducto(productoActual);
-    }while(opcion[0]!='h');
-}
-
-void navegarLista(listaAlmacen *lista){
-    char opcion[2];
-    nodoAlmacen *productoActual=lista->inicio;
-    imprimirProducto(productoActual);
-    do{
-        printf("\n\n\n[S] Siguiente producto\n");
-        printf("[P] Producto anterior\n");
-        printf("[I] Primer producto\n");
-        printf("[F] Ultimo producto\n");
-        printf("[H] Salir\n");
+        printf("[H] Menú anterior\n");
         fflush(stdin);
         fgets(opcion,2,stdin);
         strlwr(opcion);
@@ -183,7 +139,8 @@ void navegarLista(listaAlmacen *lista){
             case 'f':
                 productoActual=lista->fin;
             break;
-            case 'h':
+            case 'o':
+                return productoActual;
             break;
             default:
                 system("cls");
@@ -191,6 +148,58 @@ void navegarLista(listaAlmacen *lista){
             break;
         }
         imprimirProducto(productoActual);
+    }while(opcion[0]!='h');
+}
+
+void navegarLista(listaAlmacen *lista){
+    char opcion[2];
+    int c;
+    nodoAlmacen *productoActual=lista->inicio;
+    imprimirProducto(productoActual);
+    do{
+        printf("\n\n\n[S] Siguiente producto\n");
+        printf("[P] Producto anterior\n");
+        printf("[I] Primer producto\n");
+        printf("[F] Ultimo producto\n");
+        printf("[H] Menú anterior\n");
+        fflush(stdin);
+        fgets(opcion,2,stdin);
+        strlwr(opcion);
+        switch(opcion[0]){
+            case 's':
+                if(lista->fin==productoActual){
+                    productoActual=lista->inicio;
+                }else{
+                    productoActual=siguienteElementoAlmacen(productoActual);
+                }
+                c=1;
+            break;
+            case 'p':
+                if(lista->inicio==productoActual){
+                    productoActual=lista->fin;
+                }else{
+                    productoActual=anteriorElementoAlmacen(productoActual);
+                }
+                c=1;
+            break;
+            case 'i':
+                productoActual=lista->inicio;
+                c=1;
+            break;
+            case 'f':
+                productoActual=lista->fin;
+                c=1;
+            break;
+            case 'h':
+            break;
+            default:
+                c=0;
+                system("cls");
+                printf("Ingrese una opcion correcta\n");
+            break;
+        }
+        if(c==1)
+            imprimirProducto(productoActual);
     }while(opcion[0]!='h');
 }
 /*nodo *borrar(lista *lista, int dato) {

@@ -51,7 +51,7 @@ void registrarProductos(listaAlmacen *lista){
             system("cls");
             producto=seleccionarProductos(lista);
             system("cls");
-            printf("Cantidad de nuevo inventario:\n");
+            printf("Cantidad a agregar:\n");
             do{
                 fflush(stdin);
                 o=scanf("%d",&n);
@@ -61,9 +61,6 @@ void registrarProductos(listaAlmacen *lista){
             total=producto->existencias+n;
             producto->existencias+=n;
             reescribirTxt(lista,producto->nombreProducto,total);
-
-        break;
-        case 'h':
         break;
     }
 }

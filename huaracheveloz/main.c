@@ -11,7 +11,7 @@
 void principal(listaAlmacen *almacen);
 
 int main (){
-    listaAlmacen *almacen=nuevaLista();
+    listaAlmacen *almacen=nuevalistaAlmacen();
     inicializarListaAlmacen(almacen);
     imprimeListaAlmacen(almacen);
     principal(almacen);

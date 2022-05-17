@@ -7,6 +7,7 @@ struct listaAlmacen {
     nodoAlmacen *inicio, *fin;
     int n;
 };
+
 typedef struct listaAlmacen listaAlmacen;
 listaAlmacen *nuevalistaAlmacen(void);
 void imprimeListaAlmacen(listaAlmacen *lista);

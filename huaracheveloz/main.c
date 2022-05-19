@@ -7,18 +7,21 @@
 #include "funciones_comprador.h"
 #include "funciones_gerente.h"
 #include "funciones_repartidor.h"
+#include "cola_repartidor.h"
 
-void principal(listaAlmacen *almacen);
+void principal(listaAlmacen *almacen, colaRepartidores *repartidoresDisponibles);
 
 int main (){
-    listaAlmacen *almacen=nuevaLista();
+    colaRepartidores *repartidoresDisponibles=crearColaRepartidores();
+    inicializarRepartidores(repartidoresDisponibles);
+    listaAlmacen *almacen=nuevalistaAlmacen();
     inicializarListaAlmacen(almacen);
     imprimeListaAlmacen(almacen);
-    principal(almacen);
+    principal(almacen,repartidoresDisponibles);
     return 1;
 }
 
-void principal(listaAlmacen *almacen){
+void principal(listaAlmacen *almacen,colaRepartidores *repartidoresDisponibles){
     while(1){
         system("cls");
         int seleccion=menu_de_menus();
@@ -61,7 +64,7 @@ void principal(listaAlmacen *almacen){
                         colaPedidos();
                     break;
                     case 2:
-                        repartidoresDisponibles();
+                        consultarRepartidoresDisponibles(repartidoresDisponibles);
                     break;
                     case 3:
                         repartidoresTransito();

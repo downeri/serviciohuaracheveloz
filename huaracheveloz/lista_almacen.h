@@ -7,6 +7,7 @@ struct listaAlmacen {
     nodoAlmacen *inicio, *fin;
     int n;
 };
+
 typedef struct listaAlmacen listaAlmacen;
 listaAlmacen *nuevalistaAlmacen(void);
 void imprimeListaAlmacen(listaAlmacen *lista);
@@ -17,8 +18,6 @@ nodoAlmacen *anteriorElementoAlmacen(nodoAlmacen *nodo);
 void agregaDatoFinal(listaAlmacen *lista, char *producto, float precio, int existencias);
 nodoAlmacen *borrar2(listaAlmacen *lista, int dato);
 void inicializarListaAlmacen(listaAlmacen *lista);
-void separarNombre(char *nombre);
-void unirNombre(char *nombre);
 void navegarLista(listaAlmacen *lista);
 nodoAlmacen *seleccionarProductos(listaAlmacen *lista);
 

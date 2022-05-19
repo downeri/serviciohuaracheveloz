@@ -6,8 +6,7 @@
 void mostrarProductos(listaAlmacen *lista);
 void registrarProductos(listaAlmacen *lista);
 void imprimirProducto(nodoAlmacen *nodo);
-void reescribirTxt(listaAlmacen *lista, char nombre[30], int nuevaCantidad);
-void agregarAlTxt(char nombre[30],float precio, int existencias);
-void quitarSalto(char *nombre);
+void reescribirTxtAlmacen(listaAlmacen *lista, char nombre[30], int nuevaCantidad);
+void agregarAlTxtAlmacen(char nombre[30],float precio, int existencias);
 
 #endif // FUNCIONES_ALMACENISTA_H_INCLUDED

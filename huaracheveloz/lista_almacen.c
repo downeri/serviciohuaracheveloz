@@ -4,8 +4,7 @@
 #include "lista_almacen.h"
 #include "nodo_almacen.h"
 
-
-listaAlmacen *nuevaLista(void) {
+listaAlmacen *nuevalistaAlmacen(void) {
     listaAlmacen *p;
     p = malloc(sizeof(listaAlmacen));
     p->inicio = p->fin = NULL;
@@ -90,20 +89,6 @@ void inicializarListaAlmacen(listaAlmacen *lista){
     fclose(productos);
 }
 
-void separarNombre(char *nombre){
-    for(int i=0;i<strlen(nombre);i++){
-        if(nombre[i]=='.')
-            nombre[i]=' ';
-    }
-}
-
-void unirNombre(char *nombre){
-    for(int i=0;i<strlen(nombre);i++){
-        if(nombre[i]==' ')
-            nombre[i]='.';
-    }
-}
-
 nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
     char opcion[2];
     nodoAlmacen *productoActual=lista->inicio;
@@ -149,15 +134,17 @@ nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
         }
         imprimirProducto(productoActual);
     }while(opcion[0]!='h');
+    return NULL;
 }
 
 void navegarLista(listaAlmacen *lista){
     char opcion[2];
     int c;
+    int ind=1;
     nodoAlmacen *productoActual=lista->inicio;
     imprimirProducto(productoActual);
     do{
-        printf("\n\n\n[S] Siguiente producto\n");
+        printf("\n\n\t\t\t\t[%d/%d]\n[S] Siguiente producto\n",ind,lista->n);
         printf("[P] Producto anterior\n");
         printf("[I] Primer producto\n");
         printf("[F] Ultimo producto\n");
@@ -169,26 +156,32 @@ void navegarLista(listaAlmacen *lista){
             case 's':
                 if(lista->fin==productoActual){
                     productoActual=lista->inicio;
+                    ind=1;
                 }else{
                     productoActual=siguienteElementoAlmacen(productoActual);
+                    ind++;
                 }
                 c=1;
             break;
             case 'p':
                 if(lista->inicio==productoActual){
                     productoActual=lista->fin;
+                    ind=lista->n;
                 }else{
                     productoActual=anteriorElementoAlmacen(productoActual);
+                    ind--;
                 }
                 c=1;
             break;
             case 'i':
                 productoActual=lista->inicio;
                 c=1;
+                ind=1;
             break;
             case 'f':
                 productoActual=lista->fin;
                 c=1;
+                ind=lista->n;
             break;
             case 'h':
             break;

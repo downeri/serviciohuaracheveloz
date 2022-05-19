@@ -2,7 +2,7 @@
 #define NODO_H_INCLUDED
 
 struct nodoAlmacen {
-    struct nodo *sig, *ant;
+    struct nodoAlmacen *sig, *ant;
     char nombreProducto[30];
     float precioUnitario;
     int existencias;

@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "lista_almacen.h"
 #include "nodo_almacen.h"
+#include "funciones_generales.h"
 
 void mostrarProductos(listaAlmacen *lista){
     navegarLista(lista);
@@ -20,49 +21,53 @@ void registrarProductos(listaAlmacen *lista){
     printf("[N] Nuevo producto\n");
     printf("[A] Seleccionar del almacen\n");
     printf("[H] Salir\n");
-    fflush(stdin);
-    fgets(opcion,2,stdin);
-    strlwr(opcion);
-    switch(opcion[0]){
-        case 'n':
-            system("cls");
-            printf("Nombre producto:\n");
-            fflush(stdin);
-            fgets(nuevoNombre,30,stdin);
-            printf("Precio unitario:\n");
-            do{
+    do{
+        fflush(stdin);
+        fgets(opcion,2,stdin);
+        strlwr(opcion);
+        switch(opcion[0]){
+            case 'n':
+                system("cls");
+                printf("Nombre producto:\n");
                 fflush(stdin);
-                o=scanf("%f",&nuevoPrecio);
-                if(o!=1)
-                    printf("Ingrese un numero\n");
-            }while(o!=1);
-            printf("Existencias:\n");
-            fflush(stdin);
-            do{
-                o=scanf("%d",&nuevoExistencia);
-                if(o!=1)
-                    printf("Ingrese un numero\n");
-            }while(o!=1);
-            quitarSalto(nuevoNombre);
-            agregaDatoFinal(lista,nuevoNombre,nuevoPrecio,nuevoExistencia);
-            agregarAlTxt(nuevoNombre,nuevoPrecio,nuevoExistencia);
-        break;
-        case 'a':
-            system("cls");
-            producto=seleccionarProductos(lista);
-            system("cls");
-            printf("Cantidad a agregar:\n");
-            do{
+                fgets(nuevoNombre,30,stdin);
+                printf("Precio unitario:\n");
+                do{
+                    fflush(stdin);
+                    o=scanf("%f",&nuevoPrecio);
+                    if(o!=1)
+                        printf("Ingrese un numero\n");
+                }while(o!=1);
+                printf("Existencias:\n");
                 fflush(stdin);
-                o=scanf("%d",&n);
-                if(o!=1)
-                    printf("Ingrese un numero entero\n");
-            }while(o!=1);
-            total=producto->existencias+n;
-            producto->existencias+=n;
-            reescribirTxt(lista,producto->nombreProducto,total);
-        break;
-    }
+                do{
+                    o=scanf("%d",&nuevoExistencia);
+                    if(o!=1)
+                        printf("Ingrese un numero\n");
+                }while(o!=1);
+                quitarSalto(nuevoNombre);
+                agregaDatoFinal(lista,nuevoNombre,nuevoPrecio,nuevoExistencia);
+                agregarAlTxtAlmacen(nuevoNombre,nuevoPrecio,nuevoExistencia);
+            break;
+            case 'a':
+                system("cls");
+                producto=seleccionarProductos(lista);
+                system("cls");
+                printf("Cantidad a agregar:\n");
+                do{
+                    fflush(stdin);
+                    o=scanf("%d",&n);
+                    if(o!=1)
+                        printf("Ingrese un numero entero\n");
+                }while(o!=1);
+                total=producto->existencias+n;
+                producto->existencias+=n;
+                reescribirTxtAlmacen(lista,producto->nombreProducto,total);
+            break;
+            case 'h':
+            break;
+        }
+    }while(opcion[0]!='h');
 }
 
 void imprimirProducto(nodoAlmacen *nodo){
@@ -71,7 +76,7 @@ void imprimirProducto(nodoAlmacen *nodo){
     printf("\t\tPrecio: %.2f\tUnidades en existencia: %d",nodo->precioUnitario,nodo->existencias);
 }
 
-void reescribirTxt(listaAlmacen *lista, char nombre[30],int nuevaCantidad){
+void reescribirTxtAlmacen(listaAlmacen *lista, char nombre[30],int nuevaCantidad){
     FILE *archivo;
     char nombreABuscar[30];
     char nombreTemp[30];
@@ -95,7 +100,7 @@ void reescribirTxt(listaAlmacen *lista, char nombre[30],int nuevaCantidad){
     fclose(archivo);
 }
 
-void agregarAlTxt(char nombre[30],float precio, int existencias){
+void agregarAlTxtAlmacen(char nombre[30],float precio, int existencias){
     FILE *archivo;
     unirNombre(nombre);
     archivo=fopen("./productos.txt","a");
@@ -103,9 +108,3 @@ void agregarAlTxt(char nombre[30],float precio, int existencias){
     fclose(archivo);
 }
 
-void quitarSalto(char *nombre){
-    for(int i=0;i<strlen(nombre);i++){
-        if(nombre[i]=='\n')
-            nombre[i]=NULL;
-    }
-}

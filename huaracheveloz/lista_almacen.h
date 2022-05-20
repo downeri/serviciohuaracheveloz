@@ -9,7 +9,7 @@ struct listaAlmacen {
 };
 
 typedef struct listaAlmacen listaAlmacen;
-listaAlmacen *nuevalistaAlmacen(void);
+listaAlmacen *nuevaLista(void);
 void imprimeListaAlmacen(listaAlmacen *lista);
 void imprimeListaAlmacenReversa(listaAlmacen *lista);
 int vacia(listaAlmacen *lista);

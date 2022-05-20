@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cola_repartidor.h" />
+		<Unit filename="cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cola_pedidos.h" />
 		<Unit filename="funciones_almacenista.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -59,6 +63,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lista_almacen.h" />
+		<Unit filename="lista_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_carrito.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -74,6 +82,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="nodo_repartidor.h" />
+		<Unit filename="nodo_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_carrito.h" />
+		<Unit filename="nodo_cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_cola_pedidos.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

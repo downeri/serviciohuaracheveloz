@@ -41,9 +41,9 @@ int menu_comprador(){
     int n;
     printf("Bienvenido al huarache veloz, amado cliente!\nPor favor, seleccione una acción:\n");
     printf("1. Seleccionar producto\n");
-    printf("2. Revizar carrito de compras\n");
+    printf("2. Revisar carrito de compras\n");
     printf("3. Realizar pedido\n");
-    printf("0. Menú anterior\n");
+    printf("0. Menu anterior\n");
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);
@@ -56,12 +56,12 @@ int menu_comprador(){
 int menu_gerente(){
     int seleccion;
     int n;
-    printf("Bienvenido Gerente\nPor favor, seleccione una acción:\n");
+    printf("Bienvenido, Gerente\nPor favor, seleccione una accion:\n");
     printf("1. Revisar cola de pedidos\n");
     printf("2. Cola de repartidores en espera\n");
-    printf("3. Lista de pedidos en tránsito\n");
+    printf("3. Lista de pedidos en transito\n");
     printf("4. Asignar pedido\n");
-    printf("0. Menú anterior\n");
+    printf("0. Menu anterior\n");
     do{
         fflush(stdin);
         n=scanf("%d",&seleccion);

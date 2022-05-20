@@ -99,7 +99,7 @@ nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
         printf("[I] Primer producto\n");
         printf("[F] Ultimo producto\n\n");
         printf("[O] Seleccionar producto\n");
-        printf("[H] Menú anterior\n");
+        printf("[H] Menu anterior\n");
         fflush(stdin);
         fgets(opcion,2,stdin);
         strlwr(opcion);
@@ -148,7 +148,7 @@ void navegarLista(listaAlmacen *lista){
         printf("[P] Producto anterior\n");
         printf("[I] Primer producto\n");
         printf("[F] Ultimo producto\n");
-        printf("[H] Menú anterior\n");
+        printf("[H] Menu anterior\n");
         fflush(stdin);
         fgets(opcion,2,stdin);
         strlwr(opcion);

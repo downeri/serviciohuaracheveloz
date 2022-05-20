@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="huaracheveloz" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/huaracheveloz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/huaracheveloz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cola_pedidos.h" />
+		<Unit filename="funciones_almacenista.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_almacenista.h" />
+		<Unit filename="funciones_comprador.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_comprador.h" />
+		<Unit filename="funciones_gerente.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_gerente.h" />
+		<Unit filename="funciones_repartidor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_repartidor.h" />
+		<Unit filename="lista_almacen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_almacen.h" />
+		<Unit filename="lista_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_carrito.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menus.h" />
+		<Unit filename="nodo_almacen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_almacen.h" />
+		<Unit filename="nodo_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_carrito.h" />
+		<Unit filename="nodo_cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_cola_pedidos.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

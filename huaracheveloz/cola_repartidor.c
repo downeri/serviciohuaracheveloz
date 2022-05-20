@@ -9,6 +9,7 @@ colaRepartidores *crearColaRepartidores(){
     p->n=0;
     return p;
 }
+
 void imprimeColaRepartidores(colaRepartidores *lista) {
     nodoRepartidor *p;
     if (lista->inicio==NULL) {

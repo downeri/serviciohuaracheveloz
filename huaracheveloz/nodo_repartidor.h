@@ -4,7 +4,7 @@
 struct nodoRepartidor{
     char nombreRepartidor[30];
     int unidadDeReparticion;
-    struct nombreRepartidor *sig;
+    struct nodoRepartidor *sig;
 };
 typedef struct nodoRepartidor nodoRepartidor;
 

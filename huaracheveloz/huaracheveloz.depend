@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652928246 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -18,12 +18,12 @@
 	<stdio.h>
 	<stdlib.h>
 
-1652926252 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
+1652929620 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
 	"lista_almacen.h"
 
 1652424896 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
 
-1652928376 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.h
+1652929351 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.h
 	"cola_repartidor.h"
 
 1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.h
@@ -37,12 +37,12 @@
 
 1652403713 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.h
 
-1652928686 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
 	"funciones_gerente.h"
 	<stdio.h>
 	<stdlib.h>
 
-1652925967 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>
@@ -67,42 +67,42 @@
 	"lista.h"
 	"nodo.h"
 
-1652925943 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.c
 	<stdlib.h>
 	"nodo_almacen.h"
 	<string.h>
 
 1652924020 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
 
-1652925751 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
 	"lista_almacen.h"
 	"nodo_almacen.h"
 
-1652925751 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
+1652929620 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
 	"nodo_almacen.h"
 
-1652927176 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.c
+1652929351 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.c
 	"nodo_repartidor.h"
 	<stdlib.h>
 	<string.h>
 
-1652927176 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.h
+1652929733 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.h
 
-1652925943 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.c
+1652929351 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.c
 	"funciones_generales.h"
 	<string.h>
 
-1652925837 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.h
+1652929351 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.h
 
-1652928680 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.c
+1652929620 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.c
 	"cola_repartidor.h"
 	"funciones_generales.h"
 	<stdio.h>
 	<stdlib.h>
 
-1652927900 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.h
+1652929620 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.h
 	"nodo_repartidor.h"
 

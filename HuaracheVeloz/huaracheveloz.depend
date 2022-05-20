@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1653084116 source:e:\downloads\huaracheveloz\funciones_almacenista.c
+	"funciones_almacenista.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"lista_almacen.h"
+	"nodo_almacen.h"
+
+1652756390 e:\downloads\huaracheveloz\funciones_almacenista.h
+	"lista_almacen.h"
+
+1652791934 e:\downloads\huaracheveloz\lista_almacen.h
+	"nodo_almacen.h"
+
+1652834940 e:\downloads\huaracheveloz\nodo_almacen.h
+
+1653086412 source:e:\downloads\huaracheveloz\funciones_comprador.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"funciones_comprador.h"
+	"funciones_almacenista.h"
+	"lista_almacen.h"
+	"lista_carrito.h"
+	"nodo_carrito.h"
+
+1653084972 e:\downloads\huaracheveloz\funciones_comprador.h
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	"nodo_carrito.h"
+	"lista_carrito.h"
+	"cola_pedidos.h"
+
+1652845458 e:\downloads\huaracheveloz\nodo_carrito.h
+	"nodo_almacen.h"
+
+1653068094 e:\downloads\huaracheveloz\lista_carrito.h
+	"nodo_carrito.h"
+	"nodo_almacen.h"
+
+1653066850 e:\downloads\huaracheveloz\cola_pedidos.h
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	"nodo_cola_pedidos.h"
+
+1653067446 e:\downloads\huaracheveloz\nodo_cola_pedidos.h
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"cola_pedidos.h"
+	"nodo_cola_pedidos.h"
+
+1652756394 source:e:\downloads\huaracheveloz\funciones_gerente.c
+	"funciones_gerente.h"
+	<stdio.h>
+
+1653065360 e:\downloads\huaracheveloz\funciones_gerente.h
+
+1652756392 source:e:\downloads\huaracheveloz\funciones_repartidor.c
+	"funciones_repartidor.h"
+	<stdio.h>
+
+1652756394 e:\downloads\huaracheveloz\funciones_repartidor.h
+
+1653069668 source:e:\downloads\huaracheveloz\lista_almacen.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"lista_almacen.h"
+	"nodo_almacen.h"
+
+1653068092 source:e:\downloads\huaracheveloz\lista_carrito.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"lista_carrito.h"
+	"nodo_carrito.h"
+
+1653085794 source:e:\downloads\huaracheveloz\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"menus.h"
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"funciones_almacenista.h"
+	"funciones_comprador.h"
+	"funciones_gerente.h"
+	"funciones_repartidor.h"
+
+1652756390 e:\downloads\huaracheveloz\menus.h
+
+1653082220 source:e:\downloads\huaracheveloz\menus.c
+	"menus.h"
+	<stdio.h>
+	<stdlib.h>
+
+1652756390 source:e:\downloads\huaracheveloz\nodo_almacen.c
+	<stdlib.h>
+	"nodo_almacen.h"
+	<string.h>
+
+1652840966 source:e:\downloads\huaracheveloz\nodo_carrito.c
+	<stdlib.h>
+	<string.h>
+	"nodo_carrito.h"
+

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "lista_almacen.h"
 #include "nodo_almacen.h"
-
+#include "funciones_generales.h"
 void mostrarProductos(listaAlmacen *lista){
     navegarLista(lista);
 }
@@ -60,7 +60,7 @@ void registrarProductos(listaAlmacen *lista){
                 reescribirTxt(lista);
             break;
         }
-    }while(opcion!='h');
+    }while(opcion[0]!='h');
 }
 
 void imprimirProducto(nodoAlmacen *nodo){

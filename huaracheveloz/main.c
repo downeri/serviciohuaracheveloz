@@ -18,7 +18,7 @@ int main (){
     colaPedidos *cola_pedidos = crearColaPedidos();
     colaRepartidores *repartidoresDisponibles=crearColaRepartidores();
     inicializarRepartidoresDisponibles(repartidoresDisponibles);
-    listaCarrito *carrito;
+    listaCarrito *carrito=NULL;
     colaRepartidores *repartidoresEnTransito=crearColaRepartidores();
     inicializarRepartidoresEnTransito(repartidoresEnTransito);
     principal(almacen, carrito, cola_pedidos, repartidoresDisponibles, repartidoresEnTransito);
@@ -27,7 +27,6 @@ int main (){
 
 void principal(listaAlmacen *almacen, listaCarrito *carrito, colaPedidos *pedidos,colaRepartidores *repartidoresDisponibles,colaRepartidores *repartidoresEnTransito){
     int hayCarrito=0;
-    carrito=NULL;
     int a;
     int u;
     while(1){

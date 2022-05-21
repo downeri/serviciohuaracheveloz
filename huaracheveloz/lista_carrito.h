@@ -17,5 +17,6 @@ nodoCarrito *siguienteElementoCarrito(nodoCarrito *nodo);
 nodoCarrito *anteriorElementoCarrito(nodoCarrito *nodo);
 nodoCarrito *inspeccionarCarrito(listaCarrito *carrito, nodoAlmacen *producto);
 void liberarCarrito (listaCarrito *carrito);
+void imprimirProductoCarrito(nodoCarrito *nodo);
 
 #endif // LISTA_CARRITO_H_INCLUDED

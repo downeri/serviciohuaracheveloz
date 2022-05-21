@@ -56,7 +56,7 @@
 
 1653106250 ated upstream
 
-1653109168 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
+1653111137 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
 	"lista_almacen.h"
 
 1653109114 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
@@ -87,13 +87,14 @@
 	<stdlib.h>
 	<string.h>
 
-1653110351 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1653111137 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 	"lista_almacen.h"
 	"nodo_almacen.h"
+	"funciones_generales.h"
 
 1653108748 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
 	<stdio.h>
@@ -124,9 +125,9 @@
 	<string.h>
 	<stdio.h>
 
-1653108678 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
+1653111208 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
 
-1653110464 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
+1653111291 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -183,14 +184,14 @@
 	"nodo_almacen.h"
 	"nodo_cola_pedidos.h"
 
-1653108678 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_carrito.h
+1653111258 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_carrito.h
 	"nodo_carrito.h"
 	"nodo_almacen.h"
 
 1653108956 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_carrito.h
 	"nodo_almacen.h"
 
-1653109939 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_cola_pedidos.h
+1653111355 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_cola_pedidos.h
 	"lista_carrito.h"
 	"nodo_carrito.h"
 	"cola_pedidos.h"

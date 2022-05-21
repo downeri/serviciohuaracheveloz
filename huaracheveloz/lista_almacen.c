@@ -136,6 +136,7 @@ nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
         }
         imprimirProducto(productoActual);
     }while(opcion[0]!='h');
+    return NULL;
 }
 
 void navegarLista(listaAlmacen *lista){

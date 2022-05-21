@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 140716300212733 <<<<<<< Updated upstream
 
-1653110495 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1653111378 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"

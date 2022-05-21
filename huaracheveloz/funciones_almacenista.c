@@ -10,6 +10,7 @@ void mostrarProductos(listaAlmacen *lista){
 }
 
 void registrarProductos(listaAlmacen *lista){
+    system("cls");
     int n,o;
     nodoAlmacen *producto;
     char opcion[2];
@@ -48,6 +49,9 @@ void registrarProductos(listaAlmacen *lista){
             case 'a':
                 system("cls");
                 producto=seleccionarProductos(lista);
+                if(producto==NULL){
+                    break;
+                }
                 system("cls");
                 printf("Cantidad a agregar:\n");
                 do{

@@ -129,6 +129,9 @@ nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
             case 'o':
                 return productoActual;
             break;
+            case 'h':
+                return NULL;
+            break;
             default:
                 system("cls");
                 printf("Ingrese una opcion correcta\n");

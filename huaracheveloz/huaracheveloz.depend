@@ -87,7 +87,7 @@
 	<stdlib.h>
 	<string.h>
 
-1653111137 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1653170258 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>
@@ -127,7 +127,7 @@
 
 1653111208 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
 
-1653111291 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
+1653170408 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>

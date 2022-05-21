@@ -31,6 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cola_pedidos.h" />
+		<Unit filename="cola_repartidor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cola_repartidor.h" />
 		<Unit filename="funciones_almacenista.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -39,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="funciones_comprador.h" />
+		<Unit filename="funciones_generales.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funciones_generales.h" />
 		<Unit filename="funciones_gerente.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,6 +63,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lista_almacen.h" />
+		<Unit filename="lista_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_carrito.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -62,6 +78,15 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="nodo_almacen.h" />
+		<Unit filename="nodo_carrito.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_carrito.h" />
+		<Unit filename="nodo_cola_pedidos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo_cola_pedidos.h" />
+		<Unit filename="nodo_repartidor.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

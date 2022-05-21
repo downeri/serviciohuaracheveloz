@@ -5,7 +5,7 @@
 int menu_de_menus(){
     int seleccion;
     int n;
-    printf("Bienvenido al huarache veloz!\nPor favor, seleccione un usuario:\n");
+    printf("Bienvenido al huarache veloz!\nPor favor, seleccione un usuario:\n\n");
     printf("1. Almacenista\n");
     printf("2. Comprador\n");
     printf("3. Gerente\n");
@@ -13,9 +13,9 @@ int menu_de_menus(){
     printf("0. Salir del programa\n");
     do{
         n=scanf("%d",&seleccion);
-        if (seleccion<0||seleccion>4)
+        if (n!=1||seleccion<0||seleccion>4)
             printf("Seleccione una opción válida\n");
-    }while(seleccion<0||seleccion>4);
+    }while(n!=1||seleccion<0||seleccion>4);
     system("cls");
     return seleccion;
 }

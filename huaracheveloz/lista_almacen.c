@@ -3,9 +3,10 @@
 #include <string.h>
 #include "lista_almacen.h"
 #include "nodo_almacen.h"
+#include "funciones_generales.h"
 
 
-listaAlmacen *nuevaLista(void) {
+listaAlmacen *nuevalistaAlmacen(void) {
     listaAlmacen *p;
     p = malloc(sizeof(listaAlmacen));
     p->inicio = p->fin = NULL;
@@ -88,20 +89,6 @@ void inicializarListaAlmacen(listaAlmacen *lista){
         agregaDatoFinal(lista,nombre,precio,inventario);
     }
     fclose(productos);
-}
-
-void separarNombre(char *nombre){
-    for(int i=0;i<strlen(nombre);i++){
-        if(nombre[i]=='.')
-            nombre[i]=' ';
-    }
-}
-
-void unirNombre(char *nombre){
-    for(int i=0;i<strlen(nombre);i++){
-        if(nombre[i]==' ')
-            nombre[i]='.';
-    }
 }
 
 nodoAlmacen *seleccionarProductos(listaAlmacen *lista){
@@ -202,44 +189,3 @@ void navegarLista(listaAlmacen *lista){
             imprimirProducto(productoActual);
     }while(opcion[0]!='h');
 }
-/*nodo *borrar(lista *lista, int dato) {
-    nodo *p,*a, *z;
-    if (vacia(lista))
-        return NULL;
-    if (lista->inicio == lista->fin) {
-        if (lista->inicio->info == dato) {
-            p = lista->inicio;
-            lista->inicio = lista->fin = NULL;
-            lista->n = 0;
-            return p;
-        }
-        return NULL;
-    }
-    p = lista->inicio;
-    while (p!=NULL && p->info != dato) {
-        p = p->sig;
-    }
-    if (p==NULL) {
-        return NULL;
-    }
-    if (p == lista->inicio) {
-        lista->inicio = lista->inicio->sig;
-        lista->inicio->ant = NULL;
-        p->sig = NULL;
-        return p;
-    }
-    if (p==lista->fin) {
-        lista->fin = lista->fin->ant;
-        lista->fin->sig = NULL;
-        p->ant = NULL;
-        return p;
-    }
-    a = p->ant;
-    z = p->sig;
-    a->sig = z;
-    z->ant = a;
-    p->ant = NULL;
-    p->sig = NULL;
-    return p;
-}*/
-

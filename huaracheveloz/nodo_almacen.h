@@ -10,4 +10,5 @@ struct nodoAlmacen {
 
 typedef struct nodoAlmacen nodoAlmacen;
 nodoAlmacen *crear(char *nombre, float precio, int existencias);
+void imprimirProducto(nodoAlmacen *nodo);
 #endif // NODO_H_INCLUDED

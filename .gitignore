@@ -2,3 +2,5 @@
 *.o
 huaracheveloz/bin/Debug/huaracheveloz.exe
 huaracheveloz/productosT.txt
+*.o
+*.o

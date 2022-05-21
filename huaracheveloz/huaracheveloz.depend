@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1652639334 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+140716300212733 <<<<<<< Updated upstream
+
+1653110495 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -9,22 +11,64 @@
 	"funciones_comprador.h"
 	"funciones_gerente.h"
 	"funciones_repartidor.h"
+	<locale.h>
+
+1653084116 shed changes
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"menus.h"
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"funciones_almacenista.h"
+	"funciones_comprador.h"
+	"funciones_gerente.h"
+	"funciones_repartidor.h"
+	"lista_almacen.h"
+	"funciones_gerente.h"
+	"cola_pedidos.h"
+	"cola_repartidor.h"
+	<stdio.h>
+	"funciones_almacenista.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	<stdlib.h>
+	"nodo_almacen.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"lista_almacen.h"
+	"nodo_almacen.h"
 
 1652325296 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.h
 
-1652639181 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
+1653108678 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
 	"menus.h"
 	<stdio.h>
 	<stdlib.h>
 
-1652432285 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
+1653106250 ated upstream
+
+1653109168 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.h
 	"lista_almacen.h"
 
-1652424896 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
+1653109114 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.h
+	"lista_almacen.h"
+	"lista_carrito.h"
+	"cola_pedidos.h"
 
-1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.h
+1653108748 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.h
+	"cola_pedidos.h"
+	"cola_repartidor.h"
 
-1652322764 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.h
+1653100999 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.h
 
 1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_repartidor.c
 	"funciones_repartidor.h"
@@ -35,11 +79,15 @@
 
 1652403713 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.h
 
-1652323243 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
+1653109047 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_gerente.c
 	"funciones_gerente.h"
+	"cola_pedidos.h"
+	"cola_repartidor.h"
 	<stdio.h>
+	<stdlib.h>
+	<string.h>
 
-1652638863 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
+1653110351 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_almacenista.c
 	"funciones_almacenista.h"
 	<stdio.h>
 	<string.h>
@@ -47,9 +95,16 @@
 	"lista_almacen.h"
 	"nodo_almacen.h"
 
-1652424969 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
-	"funciones_comprador.h"
+1653108748 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
 	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"funciones_comprador.h"
+	"funciones_almacenista.h"
+	"lista_almacen.h"
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"funciones_generales.h"
 
 1652404668 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo.c
 	<stdlib.h>
@@ -63,20 +118,100 @@
 	"lista.h"
 	"nodo.h"
 
-1652408102 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.c
+1653109699 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.c
 	<stdlib.h>
 	"nodo_almacen.h"
 	<string.h>
+	<stdio.h>
 
-1652408062 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
+1653108678 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_almacen.h
 
-1652638899 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
+1653110464 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.c
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
 	"lista_almacen.h"
 	"nodo_almacen.h"
+	"funciones_generales.h"
 
-1652433856 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
+1653108677 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_almacen.h
 	"nodo_almacen.h"
+
+1653110326 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.c
+	"nodo_repartidor.h"
+	<stdlib.h>
+	<string.h>
+
+1653108748 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_repartidor.h
+
+1653108957 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.c
+	"funciones_generales.h"
+	<string.h>
+
+1653108850 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_generales.h
+
+1653109726 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.c
+	"cola_repartidor.h"
+	"funciones_generales.h"
+	"nodo_cola_pedidos.h"
+	<stdio.h>
+	<stdlib.h>
+
+1653108678 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_repartidor.h
+	"nodo_repartidor.h"
+
+1652929620 ependency file v1.0
+
+1653084116 source:e:\downloads\huaracheveloz\funciones_almacenista.c
+	"funciones_almacenista.h"
+	<stdio.h>
+	<string.h>
+
+1653108678 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_pedidos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola_pedidos.h"
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"funciones_generales.h"
+
+1653110065 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_pedidos.h
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"lista_almacen.h"
+	"nodo_almacen.h"
+	"nodo_cola_pedidos.h"
+
+1653108678 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_carrito.h
+	"nodo_carrito.h"
+	"nodo_almacen.h"
+
+1653108956 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_carrito.h
+	"nodo_almacen.h"
+
+1653109939 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_cola_pedidos.h
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"cola_pedidos.h"
+
+1653108678 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\lista_carrito.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"lista_carrito.h"
+	"nodo_carrito.h"
+
+1653108956 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_carrito.c
+	<stdlib.h>
+	<string.h>
+	"nodo_carrito.h"
+
+1653108678 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\nodo_cola_pedidos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista_carrito.h"
+	"nodo_carrito.h"
+	"cola_pedidos.h"
 

@@ -237,7 +237,7 @@ void revisarCarrito(listaCarrito *carrito, colaPedidos *pedidos, int *hayCarrito
                     *hayCarrito=0;
                 break;
                 case 'c':
-                    realizarPedido(pedidos, carrito,hayCarrito);
+                    realizarPedido(pedidos,carrito,hayCarrito);
                     carrito=NULL;
                 break;
                 case 'h':
@@ -257,9 +257,14 @@ void revisarCarrito(listaCarrito *carrito, colaPedidos *pedidos, int *hayCarrito
 }
 
 void realizarPedido(colaPedidos *cola_pedidos, listaCarrito *carrito, int *hayCarrito){
+    if(*hayCarrito==0){
+        printf("Tu carrito esta vacio, agrega lo que mas te guste a tu carrito para hacer un pedido\n");
+        system("pause");
+        return;
+    }
     nodoCarrito *producto;
     int ans;
-    char nombre[50], direccion[100], telefono[10];
+    char nombre[50], direccion[100], telefono[10],dir[100];
 
     system("cls");
     printf("\tRealizar pedido\n");
@@ -292,9 +297,9 @@ void realizarPedido(colaPedidos *cola_pedidos, listaCarrito *carrito, int *hayCa
 
             printf("Ingrese su direccion:\n");
             fflush(stdin);
-            fgets(direccion, 100, stdin);
+            fgets(direccion,100, stdin);
             quitarSalto(direccion);
-
+            strcpy(dir,direccion);
             printf("Ingrese su numero de telefono (sin espacios)\n");
             fflush(stdin);
             fgets(telefono, 11, stdin);
@@ -306,8 +311,8 @@ void realizarPedido(colaPedidos *cola_pedidos, listaCarrito *carrito, int *hayCa
                             fgets(telefono, 11, stdin);
                         }while(strlen(telefono) != 10);
                     }
-            nodoColaPedidos *pedido = crearNodoColaPedidos(carrito, nombre, direccion, telefono);
-            push_pedido(pedido, cola_pedidos);
+            nodoColaPedidos *pedido=crearNodoColaPedidos(carrito,nombre,dir,telefono);
+            push_pedido(pedido,cola_pedidos);
             system("pause");
             return;
         }

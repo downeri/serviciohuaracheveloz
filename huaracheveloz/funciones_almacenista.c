@@ -10,7 +10,6 @@ void mostrarProductos(listaAlmacen *lista){
 }
 
 void registrarProductos(listaAlmacen *lista){
-    system("cls");
     int n,o;
     nodoAlmacen *producto;
     char opcion[2];

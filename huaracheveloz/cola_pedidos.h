@@ -18,5 +18,6 @@ void pop(colaPedidos *cola);
 void imprimeColaPedidos(colaPedidos *cola);
 void escribirPedidoAlTxt(colaPedidos *cola);
 void inicializarColaPedidos();
+void eliminarPedido(colaPedidos *cola, struct nodoColaPedidos *nodo);
 
 #endif // COLA_PEDIDOS_H_INCLUDED

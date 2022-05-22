@@ -64,7 +64,6 @@ void principal(listaAlmacen *almacen, listaCarrito *carrito, colaPedidos *pedido
                         case 3:
                              realizarPedido(pedidos, carrito,&hayCarrito);
                              reescribirTxt(almacen);
-                             escribirPedidoAlTxt(pedidos);
                              seleccion=0;
                         break;
                         case 0:
@@ -109,15 +108,18 @@ void principal(listaAlmacen *almacen, listaCarrito *carrito, colaPedidos *pedido
                 }while(seleccion!=0);
             break;
             case 4: //Repartidor
-                seleccion=menu_repartidor();
-                switch(seleccion){
-                    case 1:
-                        pedidoAsignado();
-                    break;
-                    case 2:
-                        notificarEntrega();
-                    break;
-                }
+                do{
+                    system("cls");
+                    seleccion=menu_repartidor();
+                    switch(seleccion){
+                        case 1:
+                            pedidoAsignado(pedidos,repartidoresEnTransito);
+                        break;
+                        case 2:
+                            notificarEntrega(pedidos,repartidoresEnTransito,repartidoresDisponibles);
+                        break;
+                    }
+                }while(seleccion!=0);
             break;
         }
     }

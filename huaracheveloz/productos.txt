@@ -1,4 +1,4 @@
-Tacos.al.pastor 10,00 52
+Tacos.al.pastor 10,00 1024
 Tacos.de.bistec 15,00 30
 Gringa 20,00 30
 Boing.de.uva 25,00 50

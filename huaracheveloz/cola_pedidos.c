@@ -33,7 +33,7 @@ void imprimeColaPedidos(colaPedidos *cola){
             c=c->sig;
         }
         printf("\n\tTotal: %.2f\n",p->carrito->total);
-        printf("\t\tRepartidor asignado: %s\n",p->repartidorAsignado);
+        printf("\t\tRepartidor asignado: %s\n",p->repartidorAsignado->nombreRepartidor);
         o++;
         p=p->sig;
     }
@@ -79,10 +79,10 @@ void escribirPedidoAlTxt(colaPedidos *cola){
             fprintf(archivo,"%d ",c->cantidad);
             c=c->sig;
         }
-        strcpy(temp,p->repartidorAsignado);
+        strcpy(temp,p->repartidorAsignado->nombreRepartidor);
         unirNombre(temp);
         fprintf(archivo,"%.2f ",p->carrito->total);
-        fprintf(archivo,"%s\n",p->repartidorAsignado);
+        fprintf(archivo,"%s\n",p->repartidorAsignado->nombreRepartidor);
         p=p->sig;
     }
 }
@@ -103,4 +103,20 @@ void pop(colaPedidos *cola)
     cola->inicio = cola->inicio->sig;
     free(cola->inicio->ant);
     cola->inicio->ant = NULL;
+}
+
+void eliminarPedido(colaPedidos *cola, nodoColaPedidos *nodo){
+    nodoColaPedidos *p=cola->inicio;
+    while(p!=NULL){
+        if(p==nodo){
+            if(cola->n==1){
+                cola->n--;
+                cola->inicio=cola->fin=NULL;
+            }
+            liberarCarrito(p->carrito);
+            free(p);
+            break;
+        }
+        p=p->sig;
+    }
 }

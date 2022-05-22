@@ -4,7 +4,7 @@
 #include "lista_carrito.h"
 #include "nodo_carrito.h"
 #include "cola_pedidos.h"
-
+#include "cola_repartidor.h"
 struct nodoColaPedidos{
     listaCarrito *carrito;
     struct nodoColaPedidos *sig, *ant;
@@ -12,7 +12,7 @@ struct nodoColaPedidos{
     char nombre_usuario[50];
     char direccion [100];
     char telefono[10];
-    char repartidorAsignado[30];
+    nodoRepartidor *repartidorAsignado;
 };
 
 typedef struct nodoColaPedidos nodoColaPedidos;

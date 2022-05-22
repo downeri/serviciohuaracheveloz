@@ -27,14 +27,14 @@ void asignarPedido(colaPedidos *pedidos, colaRepartidores *repartidoresDisponibl
     nodoColaPedidos *pedido=pedidos->inicio;
     nodoRepartidor *repartidor;
     while(pedido!=NULL){
-        if(strcmp(pedido->repartidorAsignado,"Nadie")==0){
+        if(pedido->repartidorAsignado==NULL){
             repartidor=popRepartidor(repartidoresDisponibles);
             if(repartidor==NULL){
-                printf("No hay repartidores disponibles");
+                printf("No hay repartidores disponibles, no se asigno ningun pedido\n");
                 system("pause");
                 return;
             }
-            strcpy(pedido->repartidorAsignado,repartidor->nombreRepartidor);
+            pedido->repartidorAsignado=repartidor;
             agregarRepartidorExistente(repartidoresTransito,repartidor);
             printf("Pedido de %s asignado a %s\n",pedido->nombre_usuario,repartidor->nombreRepartidor);
         }

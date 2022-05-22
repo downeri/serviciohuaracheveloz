@@ -86,6 +86,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="nodo_cola_pedidos.h" />
+		<Unit filename="nodo_repartidor.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="nodo_repartidor.h" />
 		<Extensions />
 	</Project>

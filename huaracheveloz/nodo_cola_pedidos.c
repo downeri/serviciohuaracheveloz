@@ -14,6 +14,6 @@ nodoColaPedidos *crearNodoColaPedidos(listaCarrito *carrito, char *nombre, char 
     strcpy(p->nombre_usuario, nombre);
     strcpy(p->direccion, direccion);
     strcpy(p->telefono, tel);
-    strcpy(p->repartidorAsignado,"Nadie");
+    p->repartidorAsignado=NULL;
     return p;
 }

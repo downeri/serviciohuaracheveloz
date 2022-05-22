@@ -39,7 +39,7 @@ int menu_almacenista(){
 int menu_comprador(){
     int seleccion;
     int n;
-    printf("Bienvenido al huarache veloz, amado cliente!\nPor favor, seleccione una acción:\n");
+    printf("Bienvenido al huarache veloz, amado cliente!\nPor favor, seleccione una acción:\n\n");
     printf("1. Seleccionar producto\n");
     printf("2. Revizar carrito de compras\n");
     printf("3. Realizar pedido\n");
@@ -56,7 +56,7 @@ int menu_comprador(){
 int menu_gerente(){
     int seleccion;
     int n;
-    printf("Bienvenido Gerente\nPor favor, seleccione una acción:\n");
+    printf("Bienvenido Gerente\nPor favor, seleccione una acción:\n\n");
     printf("1. Revisar cola de pedidos\n");
     printf("2. Cola de repartidores en espera\n");
     printf("3. Lista de pedidos en tránsito\n");
@@ -71,10 +71,11 @@ int menu_gerente(){
     system("cls");
     return seleccion;
 }
+
 int menu_repartidor(){
     int seleccion;
     int n;
-    printf("Bienvenido Almacenista\nPor favor, seleccione una acción:\n");
+    printf("Bienvenido Repartidor\nPor favor, seleccione una acción:\n\n");
     printf("1. Pedido asignado\n");
     printf("2. Notificar entrega\n");
     printf("0. Menu anterior\n");

@@ -119,15 +119,15 @@ void revisarCarrito(listaCarrito *carrito, colaPedidos *pedidos, int *hayCarrito
     int cantidad, diferencia;
     if(carritoVacio(carrito))
     {
-        printf("El carrito esta vacio\n");
+        printf("El carrito esta vacio\n\n");
         system("pause");
     }
     else
     {
         nodoCarrito *productoActual=carrito->inicio;
         imprimirProductoCarrito(productoActual);
-        printf("\nTotal: %.2f",carrito->total);
         do{
+            printf("\nTotal: %.2f",carrito->total);
             printf("\n\n\n[S] Siguiente producto\n");
             printf("[P] Producto anterior\n");
             printf("[I] Primer producto\n");
@@ -282,7 +282,7 @@ void realizarPedido(colaPedidos *cola_pedidos, listaCarrito *carrito, int *hayCa
         printf("\t\tPrecio: %.2f\tCantidad: %d\n",producto->precioUnitario,producto->cantidad);
         producto = producto->sig;
     }
-    printf("Total del pedido: %f\n", carrito->total);
+    printf("Total del pedido: %.2f\n", carrito->total);
     system("pause");
         printf("¿Desea confirmar su pedido? [1=SI 0=NO]\n");
         fflush(stdin);
@@ -313,6 +313,8 @@ void realizarPedido(colaPedidos *cola_pedidos, listaCarrito *carrito, int *hayCa
                     }
             nodoColaPedidos *pedido=crearNodoColaPedidos(carrito,nombre,dir,telefono);
             push_pedido(pedido,cola_pedidos);
+            system("cls");
+            printf("¡Pedido realizado!\n");
             system("pause");
             return;
         }

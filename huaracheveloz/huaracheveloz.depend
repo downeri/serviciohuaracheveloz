@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 140716300212733 <<<<<<< Updated upstream
 
-1653182262 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
+1653185791 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menus.h"
@@ -49,7 +49,7 @@
 
 1652325296 d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.h
 
-1653178429 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
+1653185167 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\menus.c
 	"menus.h"
 	<stdio.h>
 	<stdlib.h>
@@ -100,7 +100,7 @@
 	"nodo_almacen.h"
 	"funciones_generales.h"
 
-1653182645 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
+1653185550 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\funciones_comprador.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
@@ -172,7 +172,7 @@
 	<stdio.h>
 	<string.h>
 
-1653183019 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_pedidos.c
+1653186880 source:d:\documentos\github\huarachevelozsexmachine\huaracheveloz\cola_pedidos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

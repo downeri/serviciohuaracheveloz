@@ -19,7 +19,7 @@ void imprimeColaPedidos(colaPedidos *cola){
     nodoColaPedidos *p;
     nodoCarrito *c;
     if (cola->inicio==NULL) {
-        printf("cola vacia\n");
+        printf("No hay pedidos en la cola\n\n");
         return;
     }
     p = cola->inicio;

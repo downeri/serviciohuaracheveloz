@@ -37,7 +37,7 @@ nodoColaPedidos *pedidoAsignado(colaPedidos *pedido, colaRepartidores *repartido
                 }
                 printf("\n\tTotal: %.2f\n",p->carrito->total);
                 printf("\t\tDirección: %s\n",p->direccion);
-                printf("\t\tTeléfono: %s\n",p->telefono);
+                printf("\t\tTeléfono: %s\n\n",p->telefono);
                 system("pause");
                 break;
             }
@@ -45,7 +45,7 @@ nodoColaPedidos *pedidoAsignado(colaPedidos *pedido, colaRepartidores *repartido
         p=p->sig;
     }
     if(n==0){
-        printf("No cuentas con ningun pedido para entregar\n");
+        printf("No cuentas con ningun pedido para entregar\n\n");
         system("pause");
         return NULL;
     }
@@ -69,6 +69,9 @@ void notificarEntrega(colaPedidos *pedido, colaRepartidores *repartidoresTransit
             repartidor=popRepartidor(repartidoresTransito);
             agregarRepartidorExistente(repartidoresDisponibles,repartidor);
             eliminarPedido(pedido,p);
+            system("cls");
+            printf("¡Pedido entregado!\n\n");
+            system("pause");
         }
     }
 }

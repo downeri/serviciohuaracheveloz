@@ -23,7 +23,7 @@ int menu_de_menus(){
 int menu_almacenista(){
     int seleccion;
     int n;
-    printf("Bienvenido Almacenista\nPor favor, seleccione una acción:\n");
+    printf("Bienvenido Almacenista\nPor favor, seleccione una acción:\n\n");
     printf("1. Navegar la lista\n");
     printf("2. Registrar nuevo inventario\n");
     printf("0. Menu anterior\n");
@@ -53,6 +53,7 @@ int menu_comprador(){
     system("cls");
     return seleccion;
 }
+
 int menu_gerente(){
     int seleccion;
     int n;
